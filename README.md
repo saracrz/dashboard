@@ -18,9 +18,9 @@
 
 ### Unit tests
 
-`npm run test`: Run unit tests with Jest and React Testing Library
-`npm cypress open`: Open e2e tests with Cypress
-`npm cypress run`: Run e2e tests with Cypress
+- `npm run test`: Run unit tests with Jest and React Testing Library. 
+- `npm cypress open`: Open e2e tests with Cypress.
+- `npm cypress run`: Run e2e tests with Cypress.
 
 ## 🔦 Linting
 
