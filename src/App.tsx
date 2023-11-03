@@ -6,7 +6,7 @@ export function App() {
 
 	return (
 		<div className="App">
-			<h3>React App</h3>
+			<h3>React Dashboard App</h3>
 
 			{users.map((user) => (
 				<UserCard key={user.name} user={user} />
