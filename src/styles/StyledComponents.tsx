@@ -5,7 +5,7 @@ export const AppRoot = createGlobalStyle`
             font-family: Verdana, sans-serif;
         }
 
-        /* Body */
+/* Body */
 html {
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
