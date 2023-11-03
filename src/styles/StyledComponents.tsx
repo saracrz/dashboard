@@ -1,10 +1,11 @@
-/* stylelint-disable */
-/* Sakura.css v1.4.1
- * ================
- * Minimal css theme.
- * Project: https://github.com/oxalorg/sakura/
- */
-/* Body */
+import { createGlobalStyle } from "styled-components";
+
+export const AppRoot = createGlobalStyle`
+        * {
+            font-family: Verdana, sans-serif;
+        }
+
+        /* Body */
 html {
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -257,3 +258,6 @@ fieldset {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+
+    
+`;

@@ -1,6 +1,6 @@
-import styles from "./UserCard.module.scss";
+import { UserCardWrapper } from "../styles/StyledComponents";
 import { User } from "./useUsers";
 
 export function UserCard({ user }: { user: User }) {
-	return <div className={styles.userCard}>{user.name}</div>;
+	return <UserCardWrapper>{user.name}</UserCardWrapper>;
 }

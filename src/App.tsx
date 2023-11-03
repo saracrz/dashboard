@@ -6,8 +6,7 @@ export function App() {
 
 	return (
 		<div className="App">
-			<h3>⚡⚛️ Vite React Best Practices Template (by Codely)</h3>
-			<h2>Current users</h2>
+			<h3>React App</h3>
 
 			{users.map((user) => (
 				<UserCard key={user.name} user={user} />
