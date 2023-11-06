@@ -1,8 +1,9 @@
 import { FC, useState } from "react";
 
 import { ChevronDown, ChevronUp } from "../assets/icons";
-import { Card, Content } from "../components";
+import { Card } from "../components";
 import { ICollapsibleCard } from "../types/card";
+import { Content } from "./Content";
 import { CollapsibleCardWrapper, CollapsibleTitleWrapper } from "./styles";
 
 export const CollapsibleCard: FC<ICollapsibleCard> = ({
