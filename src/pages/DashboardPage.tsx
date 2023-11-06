@@ -20,6 +20,7 @@ export const DashboardPage = () => {
 			{dashboards.map((dashboard) => {
 				return (
 					<CollapsibleCard
+						key={dashboard.id}
 						items={selectedDashboard?.dashboardItems}
 						dashboardTitle={dashboard.displayName}
 						onClickCard={() => handleDashboardClick(dashboard.id)}
