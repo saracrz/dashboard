@@ -1,7 +1,7 @@
-export interface IDashboards {
+export type IDashboards = {
 	displayName: string;
 	id: string;
-}
+};
 
 export type TVisualization = {
 	name: string;
