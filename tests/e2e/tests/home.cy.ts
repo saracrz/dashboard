@@ -2,7 +2,7 @@ describe("The Home Page", () => {
 	it("successfully loads", () => {
 		cy.visit("/");
 		cy.findByRole("heading", {
-			name: "React Dashboard App",
+			name: "Dashboard",
 		}).should("exist");
 	});
 });

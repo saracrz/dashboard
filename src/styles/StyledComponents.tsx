@@ -197,10 +197,7 @@ input[type="button"] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #1d7484;
   color: #f9f9f9;
-  border-radius: 1px;
-  border: 1px solid #1d7484;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -222,8 +219,6 @@ input[type="reset"]:focus:enabled,
 input[type="reset"]:hover:enabled,
 input[type="button"]:focus:enabled,
 input[type="button"]:hover:enabled {
-  background-color: #982c61;
-  border-color: #982c61;
   color: #f9f9f9;
   outline: 0;
 }
