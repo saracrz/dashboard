@@ -5,6 +5,7 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
+    "jest-fetch-mock": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.0"
@@ -54,6 +55,12 @@
           "testing-library/prefer-screen-queries": 0
         }
       }
+    ]
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
     ]
   },
   "browserslist": {
