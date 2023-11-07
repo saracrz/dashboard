@@ -1,4 +1,4 @@
-import { IDashboard, IDashboards } from "../../src/types";
+import { IDashboards } from "../../src/types";
 
 export const mockedDashboards: IDashboards[] = [
 	{
