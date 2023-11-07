@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const ContentList = styled.ul`
-	padding: 20px;
-
 	li {
-		list-style-type: none;
 		font-size: 12px;
+		list-style-type: none;
 		margin-left: 25px;
 	}
 
 	svg {
-		vertical-align: baseline;
 		margin-right: 8px;
+		vertical-align: middle;
 	}
 `;
