@@ -1,9 +1,9 @@
 <h1 align="center">
-  Update the App title
+  Dashboard App
 </h1>
 
 <p align="center">
-  Update your description
+  App where you can render collapsible card with info using Typescript, React, React Testing Librry and Styled Components.
   <br />
   <br />
 </p>
