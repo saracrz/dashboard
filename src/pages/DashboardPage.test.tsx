@@ -1,4 +1,3 @@
-/* eslint-disable jest/no-mocks-import */
 import { render, screen } from "@testing-library/react";
 
 import { mockedDashboards } from "../../tests/fixtures/index";
