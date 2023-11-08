@@ -6,4 +6,6 @@ export interface ICard {
 export interface ICollapsibleCard {
 	dashboardTitle: string;
 	id: string;
+	openCardId: string | null;
+	setOpenCardId: (id: string | null) => void;
 }

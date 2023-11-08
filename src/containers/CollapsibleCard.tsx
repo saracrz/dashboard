@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 
 import { ChevronDown, ChevronUp } from "../assets/icons";
 import { Card } from "../components";
@@ -8,12 +8,17 @@ import { ICollapsibleCard } from "../types/card";
 import { Content } from "./Content";
 import { CollapsibleCardWrapper, CollapsibleTitleWrapper } from "./styles";
 
-export const CollapsibleCard: FC<ICollapsibleCard> = ({ dashboardTitle, id }) => {
-	const [isCollapsed, setIsCollapsed] = useState(true);
+export const CollapsibleCard: FC<ICollapsibleCard> = ({
+	dashboardTitle,
+	id,
+	setOpenCardId,
+	openCardId,
+}) => {
 	const { dashboardData } = useGetDashboard(id);
+	const isCollapsed = openCardId !== id;
 
 	const toggleCollapse = (): void => {
-		setIsCollapsed(!isCollapsed);
+		setOpenCardId(isCollapsed ? id : null);
 	};
 
 	return (
