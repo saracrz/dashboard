@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
-import { ChevronDown, ChevronUp } from "../assets/icons";
+import { ChevronDown, ChevronUp, Star, StarFilled } from "../assets/icons";
 import { Card } from "../components";
 import { useGetDashboard } from "../hooks/useGetDashboard";
 import { IDashboardItem } from "../types";
@@ -14,19 +14,37 @@ export const CollapsibleCard: FC<ICollapsibleCard> = ({
 	setOpenCardId,
 	openCardId,
 }) => {
+	const [isFavorite, setFavorite] = useState<boolean>(false);
 	const { dashboardData } = useGetDashboard(id);
 	const isCollapsed = openCardId !== id;
+
+	useEffect(() => {
+		const storedFavorite = localStorage.getItem(dashboardTitle);
+		if (storedFavorite === "favorite") {
+			setFavorite(true);
+		}
+	}, [dashboardTitle]);
 
 	const toggleCollapse = (): void => {
 		setOpenCardId(isCollapsed ? id : null);
 	};
 
+	const toggleFavorite = () => {
+		setFavorite(!isFavorite);
+		localStorage.setItem(dashboardTitle, !isFavorite ? "favorite" : "");
+	};
+
 	return (
 		<CollapsibleCardWrapper>
 			<Card>
-				<CollapsibleTitleWrapper onClick={toggleCollapse}>
+				<CollapsibleTitleWrapper>
 					<h6>{dashboardTitle}</h6>
-					<button onClick={toggleCollapse}>{isCollapsed ? <ChevronDown /> : <ChevronUp />}</button>
+					<div>
+						<button onClick={toggleFavorite}>{isFavorite ? <StarFilled /> : <Star />}</button>
+						<button onClick={toggleCollapse}>
+							{isCollapsed ? <ChevronDown /> : <ChevronUp />}
+						</button>
+					</div>
 				</CollapsibleTitleWrapper>
 				{!isCollapsed && <Content items={dashboardData?.dashboardItems as IDashboardItem[]} />}
 			</Card>
