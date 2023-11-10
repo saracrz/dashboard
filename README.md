@@ -9,6 +9,9 @@
 </p>
 
 🚀  Try in live -> [Dashboards App](https://dashboards-data.netlify.app/)
+<br />
+
+📝 [Notion docs](https://www.notion.so/Dashboards-App-4ff5e50f83c1429abb98d4aa1f1046da?pvs=4)
 
 ## Run your app
 
