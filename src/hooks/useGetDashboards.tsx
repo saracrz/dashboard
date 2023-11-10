@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 import { getDashboards } from "../services/api";
-import { IDashboards } from "../types";
+import { IDashboard } from "../types";
 
 export const useGetDashboards = () => {
-	const [dashboards, setDashboards] = useState<IDashboards[]>([]);
+	const [dashboards, setDashboards] = useState<IDashboard[]>([]);
 	const [loading, setLoading] = useState<boolean>(true);
 
 	useEffect(() => {

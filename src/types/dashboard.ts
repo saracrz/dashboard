@@ -19,6 +19,7 @@ export interface IDashboardItem {
 }
 
 export interface IDashboard {
-	dashboardItems: IDashboardItem[];
+	displayName: string;
+	dashboardItems: IDashboardItem[] | null;
 	id: string;
 }
