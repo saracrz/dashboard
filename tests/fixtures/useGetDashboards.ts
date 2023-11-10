@@ -10,7 +10,7 @@ export const mockUseGetDashboards = (mockedDashboards: IDashboards[]): void => {
 
 export const mockUseGetDashboardsLoadingData = (mockedDashboards: IDashboards[]): void => {
 	(useGetDashboards as jest.Mock).mockReturnValue({
-		dashboards: [],
+		dashboards: mockedDashboards,
 		loading: true,
 	});
 };

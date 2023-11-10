@@ -22,7 +22,7 @@ test("Dashboard component displays dashboards titles", () => {
 	expect(screen.getByText("Immunization")).toBeInTheDocument();
 });
 
-test("Dashboard component when loading data should not display", () => {
+test("Dashboard component when loading data should display the Loading text", () => {
 	mockUseGetDashboardsLoadingData([]);
 	render(<DashboardPage />);
 

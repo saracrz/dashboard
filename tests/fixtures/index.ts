@@ -1,4 +1,4 @@
-import { IDashboards } from "../../src/types";
+import { IDashboard, IDashboards } from "../../src/types";
 
 export const mockedDashboards: IDashboards[] = [
 	{
@@ -22,3 +22,16 @@ export const mockedDashboards: IDashboards[] = [
 		id: "TAMlzYkstb7",
 	},
 ];
+
+export const mockedDashboardData: IDashboard = {
+	displayName: "Antenatal Care",
+	id: "nghVC4wtyzi",
+	dashboardItems: [
+		{
+			visualization: {
+				name: "ANC: Coverage by quarter and district (two-category)",
+			},
+			id: "rOehBDv4LGG",
+		},
+	],
+};
