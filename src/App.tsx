@@ -1,10 +1,10 @@
-import { DashboardPage } from "./pages/DashboardPage";
+import { DashboardsPage } from "./pages/DashboardsPage";
 
 export const App = () => {
 	return (
 		<div className="App">
-			<h4>Dashboard</h4>
-			<DashboardPage />
+			<h4>Dashboards</h4>
+			<DashboardsPage />
 		</div>
 	);
 };
