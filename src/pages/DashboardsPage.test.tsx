@@ -5,7 +5,7 @@ import {
 	mockUseGetDashboards,
 	mockUseGetDashboardsLoadingData,
 } from "../../tests/fixtures/useGetDashboards";
-import { DashboardPage } from "./DashboardPage";
+import { DashboardsPage } from "./DashboardsPage";
 
 jest.mock("../hooks/useGetDashboards", () => ({
 	useGetDashboards: jest.fn(),
@@ -13,7 +13,7 @@ jest.mock("../hooks/useGetDashboards", () => ({
 
 test("Dashboard component displays dashboards titles", () => {
 	mockUseGetDashboards(mockedDashboards);
-	render(<DashboardPage />);
+	render(<DashboardsPage />);
 
 	expect(screen.getByText("Antenatal Care")).toBeInTheDocument();
 	expect(screen.getByText("Cases Malaria")).toBeInTheDocument();
@@ -24,7 +24,7 @@ test("Dashboard component displays dashboards titles", () => {
 
 test("Dashboard component when loading data should display the Loading text", () => {
 	mockUseGetDashboardsLoadingData([]);
-	render(<DashboardPage />);
+	render(<DashboardsPage />);
 
 	expect(screen.queryByText("Antenatal Care")).not.toBeInTheDocument();
 	expect(screen.queryByText("Cases Malaria")).not.toBeInTheDocument();

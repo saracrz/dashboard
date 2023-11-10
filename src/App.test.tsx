@@ -5,7 +5,7 @@ import { App } from "./App";
 test("App component display header", () => {
 	render(<App />);
 
-	const heading = screen.getByText("Dashboard");
+	const heading = screen.getByText("Dashboards");
 
 	expect(heading).toBeInTheDocument();
 });

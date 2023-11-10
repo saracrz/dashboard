@@ -4,7 +4,7 @@ import { CollapsibleCard } from "../containers/CollapsibleCard";
 import { Divider } from "../containers/styles";
 import { useGetDashboards } from "../hooks/useGetDashboards";
 
-export const DashboardPage = () => {
+export const DashboardsPage = () => {
 	const { dashboards, loading } = useGetDashboards();
 	const [openCardId, setOpenCardId] = useState<string | null>(null);
 
