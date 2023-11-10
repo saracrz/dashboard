@@ -8,6 +8,8 @@
   <br />
 </p>
 
+🚀  Try in live -> [Dashboards App](https://dashboards-data.netlify.app/)
+
 ## Run your app
 
    1. `cd my-app`: Move to your project root directory
@@ -15,6 +17,7 @@
    3. `npm start`: Start the development server on [localhost:3000](http://localhost:3000)
 
 ## ✅ Testing
+- npm run test path-to-test (example path: src/containers/CollapsibleCard.test.tsx)
 
 ### Unit tests
 
