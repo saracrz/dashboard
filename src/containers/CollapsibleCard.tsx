@@ -29,13 +29,14 @@ export const CollapsibleCard: FC<ICollapsibleCard> = ({
 		setOpenCardId(isCollapsed ? id : null);
 	};
 
-	const toggleFavorite = () => {
+	const toggleFavorite = (event: React.MouseEvent) => {
+		event.stopPropagation();
 		setFavorite(!isFavorite);
 		localStorage.setItem(dashboardTitle, !isFavorite ? "favorite" : "");
 	};
 
 	return (
-		<CollapsibleCardWrapper>
+		<CollapsibleCardWrapper onClick={toggleCollapse}>
 			<Card>
 				<CollapsibleTitleWrapper>
 					<h6>{dashboardTitle}</h6>
