@@ -6,6 +6,7 @@ export const CollapsibleCardWrapper = styled.div`
 
 export const CollapsibleTitleWrapper = styled.div`
 	align-items: center;
+	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
