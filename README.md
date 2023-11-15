@@ -1,9 +1,9 @@
 <h1 align="center">
-  Dashboard App
+  Dashboards App
 </h1>
 
 <p align="center">
-  App where you can render collapsible card with info using Typescript, React, React Testing Librry and Styled Components.
+  App where you can render collapsible cards with data info using Typescript, React, React Testing Library,Cypress and Styled Components.
   <br />
   <br />
 </p>
